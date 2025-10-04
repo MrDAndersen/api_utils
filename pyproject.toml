@@ -1,0 +1,80 @@
+[project]
+name = "api-utils"
+version = "0.1.0"
+description = "Hybrid cache overlays and RuneLogger rituals for contributor-safe API wrappers"
+authors = [
+    { name = "Dennis", email = "your-email@example.com" }
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [[project]
+name = "rune-utils"
+version = "0.1.0"
+description = "Hybrid cache overlays and logger rituals for contributor-safe API wrappers"
+authors = [
+    { name = "Dennis", email = "andersen.dennis@live.com" }
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests>=2.31.0",
+    "requests-cache>=1.1.1",
+    "pymongo>=4.6.0",
+    "python-dateutil>=2.8.2"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "ruff"
+]
+
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["rune_utils"]
+
+[tool.setuptools.package-data]
+"rune_utils" = ["py.typed"]
+
+[tool.black]
+line-length = 100
+target-version = ['py312']
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I"]
+
+    "requests>=2.31.0",
+    "requests-cache>=1.1.1",
+    "pymongo>=4.6.0",
+    "python-dateutil>=2.8.2"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "ruff"
+]
+
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["rune_utils"]
+
+[tool.setuptools.package-data]
+"rune_utils" = ["py.typed"]
+
+[tool.black]
+line-length = 100
+target-version = ['py39']
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "I"]
